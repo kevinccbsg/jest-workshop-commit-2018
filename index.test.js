@@ -14,10 +14,13 @@ describe('Suma', () => {
   });
 });
 
-/*
-describe('Nulo', () => {
-  it('must return null', () => {
-    
+
+describe('toEqual toBe', () => {
+  it('toEqual', () => {
+    expect({ a: 1 }).toEqual({ a: 1 });
+  });
+
+  it('toBe', () => {
+    expect(1).toBe(1);
   });
 });
-*/
