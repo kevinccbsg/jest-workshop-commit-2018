@@ -1,0 +1,22 @@
+{
+  "name": "jest-workshop-commit-2018",
+  "version": "1.0.0",
+  "description": "- install jest  - configure test runner (package.json)  - jest executions  - assertions with expect  - first test  - TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinccbsg/jest-workshop-commit-2018.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinccbsg/jest-workshop-commit-2018/issues"
+  },
+  "homepage": "https://github.com/kevinccbsg/jest-workshop-commit-2018#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
