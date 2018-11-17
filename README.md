@@ -24,5 +24,6 @@ git checkout 01-basic-jest-solution
 ### Links
 
 [Home](https://jestjs.io/)
+[enzyme](https://airbnb.io/enzyme/)
 [React test renderer](https://reactjs.org/docs/test-renderer.html)
 [Expect assertions](https://jestjs.io/docs/en/expect)
