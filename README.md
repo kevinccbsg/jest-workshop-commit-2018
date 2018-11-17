@@ -24,6 +24,7 @@ git checkout 01-basic-jest-solution
    
    - Explain importance of snapshots and simplicity
    - snapshot header component
+   - snapshot not only react components
 
  + 03-snapshots-solution
 
