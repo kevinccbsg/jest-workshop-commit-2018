@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> <Button /> match snapshot 1`] = `
+<div>
+  <header>
+    <h1
+      className="ui header undefined"
+    >
+      Create your cool notes
+    </h1>
+  </header>
+  <main>
+    <button
+      onClick={[Function]}
+    >
+      Access
+    </button>
+  </main>
+</div>
+`;
