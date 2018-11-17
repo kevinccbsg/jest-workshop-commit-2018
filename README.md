@@ -27,6 +27,12 @@ git checkout 01-basic-jest-solution
    - snapshot not only react components
 
  + 03-snapshots-solution
+ + 04-components-tdd
+
+   - Button component
+   - App layout
+
+ + 04-components-tdd-solution
 
 ### Links
 
