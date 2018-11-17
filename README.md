@@ -39,12 +39,31 @@ git checkout 01-basic-jest-solution
    - Mocks and test for async call
 
  + 05-async-mocks-solution
+ + 06-full-application-unit-testing
+
+   - overview application
+   - redux unit testing
+   - component unit testing snapshot
+
+ + 06-full-application-unit-testing-solution
+ + 07-full-aplication-integration-testing
+
+   - overview what integration tests are
+   - mocking api calls
+   - afterAll beforeAll
+
+ + 07-full-aplication-integration-solution
 
 ### Links
 
 [Home](https://jestjs.io/)
+
 [Jest configuration](https://jestjs.io/docs/en/configuration.html)
+
 [Jest snapshot](https://jestjs.io/docs/en/snapshot-testing)
+
 [enzyme](https://airbnb.io/enzyme/)
+
 [React test renderer](https://reactjs.org/docs/test-renderer.html)
+
 [Expect assertions](https://jestjs.io/docs/en/expect)
