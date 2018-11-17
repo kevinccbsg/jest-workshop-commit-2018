@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import React from 'react';
 import Header from '../components/Header';
 import Button from '../components/Button';
@@ -14,6 +15,12 @@ class App extends React.Component {
 
   handleClick() {
     this.setState({ route: 'app' });
+  }
+
+  async componentDidMount() {
+    const response = await fetch('http://worldclockapi.com/api/json/est/now');
+    const date = await response.json();
+    this.setState({ date });
   }
 
   render() {

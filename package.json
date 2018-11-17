@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/kevinccbsg/jest-workshop-commit-2018#readme",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },

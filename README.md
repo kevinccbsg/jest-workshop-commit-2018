@@ -33,6 +33,12 @@ git checkout 01-basic-jest-solution
    - App layout
 
  + 04-components-tdd-solution
+ + 05-async-mocks
+
+   - review fetch call to an external API
+   - Mocks and test for async call
+
+ + 05-async-mocks-solution
 
 ### Links
 
