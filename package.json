@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,13 +23,27 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|sass|styl|scss)$": "<rootDir>/test/styleMock.js"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/test/testConfig.js",
+    "testPathIgnorePatterns": [
+      "<rootDir>/.next/",
+      "<rootDir>/node_modules/"
+    ]
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.6.3",
     "style-loader": "^0.23.1",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
