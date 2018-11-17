@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`returns a object content 1`] = `
+Object {
+  "description": "you can write lorem ipsum dolor ¯_(ツ)_/¯",
+  "title": "write your note title :)",
+}
+`;
