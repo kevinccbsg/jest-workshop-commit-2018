@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Button from '../components/Button';
+import styles from './App.css';
 
 class App extends React.Component {
   constructor() {
@@ -21,8 +22,8 @@ class App extends React.Component {
         <Header>
           Create your cool notes
         </Header>
-        <main>
-          <Button onClick={this.handleClick}>Access</Button>
+        <main className={styles.appContainer}>
+          <Button className="ui button secondary" onClick={this.handleClick}>Access</Button>
         </main>
       </div>
     );

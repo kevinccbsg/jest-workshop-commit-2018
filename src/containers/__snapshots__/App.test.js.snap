@@ -11,6 +11,7 @@ exports[`<App /> <Button /> match snapshot 1`] = `
   </header>
   <main>
     <button
+      className="ui button secondary"
       onClick={[Function]}
     >
       Access
