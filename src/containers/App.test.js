@@ -2,6 +2,9 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 import App from './App';
+import { date } from '../../test/fixtures/api';
+
+jest.mock('../api/getDate');
 
 const props = {};
 
@@ -33,6 +36,12 @@ describe('<App />', () => {
   it('Button click change state property route to "app" value', () => {
     shallowWrapper.find('Button').props().onClick();
     expect(shallowWrapper.state().route).toEqual('app');
+  });
+
+  it.only('must have state property date not {}', async () => {
+    const newShallowComponent = await shallow(<App />);
+    const result = newShallowComponent.state().date;
+    expect(result).toEqual(date);
   });
 });
 

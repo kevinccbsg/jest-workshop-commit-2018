@@ -3,12 +3,14 @@ import React from 'react';
 import Header from '../components/Header';
 import Button from '../components/Button';
 import styles from './App.css';
+import { getDate } from '../api';
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
       route: 'home',
+      date: {},
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -18,8 +20,7 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
-    const response = await fetch('http://worldclockapi.com/api/json/est/now');
-    const date = await response.json();
+    const date = await getDate();
     this.setState({ date });
   }
 
