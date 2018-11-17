@@ -20,11 +20,18 @@ git checkout 01-basic-jest-solution
    - install test renderer enzyme enzyme-adapter-react-16
    - configure enzyme adapter
    - one test
+ + 03-snapshots
+   
+   - Explain importance of snapshots and simplicity
+   - snapshot header component
+
+ + 03-snapshots-solution
 
 ### Links
 
 [Home](https://jestjs.io/)
 [Jest configuration](https://jestjs.io/docs/en/configuration.html)
+[Jest snapshot](https://jestjs.io/docs/en/snapshot-testing)
 [enzyme](https://airbnb.io/enzyme/)
 [React test renderer](https://reactjs.org/docs/test-renderer.html)
 [Expect assertions](https://jestjs.io/docs/en/expect)
