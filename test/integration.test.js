@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import store from '../src/store';
 import App from '../src/containers/App';
 import { newNote } from './fixtures/api';
-import respect from '../server/respect';
 
 jest.mock('../src/api/getNotes');
 jest.mock('../src/api/createNote');
@@ -55,7 +54,6 @@ describe('Application integration tests', () => {
 
 afterAll((done) => {
   console.log('Playing respect');
-  respect()
   done();
 });
 
