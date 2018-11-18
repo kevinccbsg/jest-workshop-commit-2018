@@ -10,3 +10,17 @@ export const date = {
   ordinalDate: '2018-321',
   serviceResponse: null,
 };
+
+export const notes = [
+  {
+    id: 1,
+    title: 'test title',
+    description: 'test description',
+  }
+];
+
+
+export const newNote = {
+  title: 'new note',
+  description: 'new description',
+};

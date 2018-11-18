@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NoteList /> Match snapshot 1`] = `
+<div
+  className="ui cards"
+  style={
+    Object {
+      "justifyContent": "center",
+    }
+  }
+>
+  <div
+    className="card"
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="header"
+        onClick={[Function]}
+      >
+        test title
+      </div>
+    </div>
+  </div>
+</div>
+`;
