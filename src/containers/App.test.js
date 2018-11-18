@@ -38,7 +38,7 @@ describe('<App />', () => {
     expect(shallowWrapper.state().route).toEqual('app');
   });
 
-  it.only('must have state property date not {}', async () => {
+  it('must have state property date not {}', async () => {
     const newShallowComponent = await shallow(<App />);
     const result = newShallowComponent.state().date;
     expect(result).toEqual(date);
