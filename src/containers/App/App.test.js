@@ -2,18 +2,20 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 import App from './App';
-import { date } from '../../test/fixtures/api';
+import { date } from '../../../test/fixtures/api';
 
-jest.mock('../api/getDate');
+jest.mock('../../api/getDate');
 
-const props = {};
+const props = {
+  getNotes: () => 0,
+};
 
 describe('<App />', () => {
   
-  const shallowWrapper = shallow(<App />);
-  const mountWrapper = mount(<App />);
+  const shallowWrapper = shallow(<App {...props} />);
+  const mountWrapper = mount(<App {...props} />);
 
-  it('<Button /> match snapshot', () => {
+  it('<App /> match snapshot', () => {
     const tree = renderer.create(<App {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -38,8 +40,8 @@ describe('<App />', () => {
     expect(shallowWrapper.state().route).toEqual('app');
   });
 
-  it.only('must have state property date not {}', async () => {
-    const newShallowComponent = await shallow(<App />);
+  it('must have state property date not {}', async () => {
+    const newShallowComponent = await shallow(<App {...props} />);
     const result = newShallowComponent.state().date;
     expect(result).toEqual(date);
   });
