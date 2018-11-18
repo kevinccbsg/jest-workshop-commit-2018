@@ -13,4 +13,13 @@ describe('Reducer test', () => {
       notes,
     })
   });
+
+  it('default action', () => {
+    const action = {
+      type: 'default',
+    };
+    const initState = { default: true };
+    const newState = reducer(initState, action);
+    expect(newState).toEqual(initState)
+  });
 });
