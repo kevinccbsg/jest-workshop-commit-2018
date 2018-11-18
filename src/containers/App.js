@@ -1,19 +1,13 @@
 import 'babel-polyfill';
 import React from 'react';
+import { connect } from 'react-redux';
+import { getNotes, createNote } from '../actions';
 import Header from '../components/Header';
 import Button from '../components/Button';
 import NoteList from '../components/NoteList';
 import NoteForm from './NoteForm';
 import styles from './App.css';
 import { getDate } from '../api';
-
-const items = [
-  {
-    id: '0',
-    title: 'Note 1',
-    description: 'description',
-  }
-];
 
 class App extends React.Component {
   constructor() {
@@ -31,11 +25,13 @@ class App extends React.Component {
 
   async componentDidMount() {
     const date = await getDate();
+    this.props.getNotes();
     this.setState({ date });
   }
 
   render() {
     const { route } = this.state;
+    const { notes } = this.props;
     return (
       <div>
         <Header>
@@ -51,11 +47,11 @@ class App extends React.Component {
             <div>
               <div className={styles.container}>
                 <h2>Create note</h2>
-                <NoteForm />
+                <NoteForm onSubmit={this.props.createNote} />
               </div>
               <div className={styles.container}>
                 <h2>Note list</h2>
-                <NoteList items={items} />
+                <NoteList items={notes} />
               </div>
             </div>
           )}
@@ -65,4 +61,13 @@ class App extends React.Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  notes: state.notes,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  getNotes: () => dispatch(getNotes()),
+  createNote: (title, description) => dispatch(createNote(title, description)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

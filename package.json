@@ -24,8 +24,12 @@
   "homepage": "https://github.com/kevinccbsg/jest-workshop-commit-2018#readme",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "cors": "^2.8.5",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-redux": "^5.1.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
   },
   "jest": {
     "moduleNameMapper": {
@@ -40,6 +44,7 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "concurrently": "^4.0.1",
