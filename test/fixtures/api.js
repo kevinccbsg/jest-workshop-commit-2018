@@ -21,6 +21,7 @@ export const notes = [
 
 
 export const newNote = {
+  id: 2,
   title: 'new note',
   description: 'new description',
 };
