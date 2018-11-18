@@ -38,6 +38,7 @@ describe('<App />', () => {
   it('Button click change state property route to "app" value', () => {
     shallowWrapper.find('Button').props().onClick();
     expect(shallowWrapper.state().route).toEqual('app');
+    expect(shallowWrapper.find('NoteForm').exists()).toEqual(true);
   });
 
   it('must have state property date not {}', async () => {
