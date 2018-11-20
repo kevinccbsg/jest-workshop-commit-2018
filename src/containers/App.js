@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import React from 'react';
 import { connect } from 'react-redux';
 import { getNotes, createNote } from '../actions';
