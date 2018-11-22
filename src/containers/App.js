@@ -6,14 +6,12 @@ import Button from '../components/Button';
 import NoteList from '../components/NoteList';
 import NoteForm from './NoteForm';
 import styles from './App.css';
-import { getDate } from '../api';
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
       route: 'home',
-      date: {},
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -23,9 +21,7 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
-    const date = await getDate();
     this.props.getNotes();
-    this.setState({ date });
   }
 
   render() {
