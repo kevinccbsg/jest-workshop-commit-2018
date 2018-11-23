@@ -23,7 +23,7 @@ describe('Action test', () => {
     await createNote(newNote.title, newNote.description)(dispatch);
     expect(dispatch).toHaveBeenCalledWith({
       type: SET_NOTES,
-      payload: [...notes, newNote],
+      payload: [...notes, newNote], // { id: '3', newNote.title, newNote.description }
     });
   });
 });
